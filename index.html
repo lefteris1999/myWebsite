@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal webpage">
+    <title>Eleftherios Konstantinou</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1 class="header-title">Hi, I'm <span>Eleftherios Konstantinou</span></h1>
+            <p class="header-subtitle"><span>Data Scientist</span></p>
+            <a href="#about" class="btn-primary">Learn More About Me</a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section with Unique Background Color -->
+    <section id="about" class="container about-section">
+        <h2>About Me</h2>
+        <p>Hello! My name is Eleftherios, a <span>Data Scientist</span>, passionate about combining creativity and technology to create impactful experiences. I specialize in Data Analysis and Machine Learning and have a deep love for solving complex problems with innovative and data driven solutions.</p>
+        <p>Feel free to explore my portfolio below to see some of my recent projects.</p>
+    </section>
+
+    <!-- Portfolio Section with Different Background Color -->
+    <section id="portfolio" class="container portfolio-section">
+        <h2>Recent Projects</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="/img/ABSApipelineJPG.JPG" alt = "Project 1">
+                <div class="portfolio-details">
+                    <h3>Aspect Based Sentiment Analysis (ABSA)</h3>
+                    <p>Click to Learn More.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="/img/hateSpeechJPG.JPG" alt="Project 2">
+                <div class="portfolio-details">
+                    <h3>Classifying Offensive Tweets</h3>
+                    <p>Click to Learn More</p>
+                </div>
+            </div>
+            <!-- Add more projects -->
+        </div>
+    </section>
+
+    <!-- Education Section with Different Background Color -->
+    <section id="education" class="container education-section">
+        <h2>Education</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <h3>Bachelor's Degree in Computer Science</h3>
+                <p><strong>University of Nottingham</strong> - 2019 - 2022</p>
+                <p>Click to Learn More</p>
+            </div>
+            <div class="education-item">
+                <h3>Master's Degree in Data Science</h3>
+                <p><strong>City, University of London</strong> - 2022 - 2023</p>
+                <p>Click to Learn More</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Contact Section with a Distinct Background Color -->
+    <!-- <section id="contact" class="container contact-section">
+        <h2>Contact Me</h2>
+        <form id="contactForm" >
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section> -->
+
+
+<!-- Open gmail action -->
+    <section id="contact" class="container contact-section">
+        <h2>Contact Me</h2>
+        <form id="contactForm" onsubmit="openGmail(event)">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message via Gmail</button>
+        </form>
+    </section>
+    
+    <script>
+        function openGmail(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+    
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+    
+            // Pre-fill the Gmail email with subject and body
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=elefcon99@gmail.com&su=Contact%20from%20${name}&body=Name:%20${name}%0AEmail:%20${email}%0A%0A${message}`;
+    
+            // Open Gmail in a new tab
+            window.open(gmailUrl, '_blank');
+        }
+    </script>
+    
+
+<!-- Use mailto action from HTML-->
+    <!-- <section id="contact" class="container contact-section">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="mailto:mouxtisfais@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section> -->
+    
+
+    <!-- Use  PHP to handle emails -->
+    <!-- <section id="contact" class="container contact-section">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="sendEmail.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>     -->
+
+    <footer>
+        <p>&copy; 2024 Eleftherios Konstantinou. Designed by Eleftherios Konstantinou.</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/eleftherios-konstantinou-79a019239" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/lefteris1999" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top-btn" onclick="scrollToTop()">
+        ↑ Top
+    </button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

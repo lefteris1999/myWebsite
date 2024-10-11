@@ -1,0 +1,316 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    text-align: center;
+    color: white;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.header-title span {
+    color: #FFD700;
+}
+
+.header-subtitle {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.btn-primary {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ffcc00;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #FFD700;
+}
+
+/* About Section - Blue Background */
+.about-section {
+    padding: 50px 20px;
+    background-color: #e0f7fa; /* Light blue background */
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.about-section span {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Portfolio Section - Gray Background */
+.portfolio-section {
+    padding: 50px 20px;
+    background-color: #e9ecef; /* Light gray background */
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.02);
+}
+
+.portfolio-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-details p {
+    color: #666;
+}
+
+
+/* Education Section */
+.education-section {
+    background-color: #e0f7fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.education-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Timeline Container */
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0;
+}
+
+.education-item {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.education-item:hover {
+    transform: scale(1.05);
+}
+
+/* Content inside each education block */
+.education-item h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.education-item strong {
+    font-weight: 600;
+    color: #000;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .education-item {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .education-item::before {
+        left: 50%;
+    }
+
+    .education-item h3 {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+/* Contact Section - Soft Yellow Background */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #fffde7; /* Soft yellow background */
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer i {
+    color: #FFD700;
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.back-to-top-btn:hover {
+    background-color: #ffcc00;
+}
+
+/* Show the button when the user scrolls */
+.back-to-top-btn.show {
+    display: block;
+    opacity: 1;
+}
+
