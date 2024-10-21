@@ -208,6 +208,21 @@ header {
     color: #000;
 }
 
+.education-item a {
+    display: block;
+    color: inherit; /* Keep the text color the same */
+    text-decoration: none;
+}
+
+.education-item a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.education-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 /* Add responsive styles */
 @media (max-width: 768px) {
     .education-item {

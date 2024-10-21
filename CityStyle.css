@@ -1,0 +1,114 @@
+/* Header for Education Detail Page */
+.education-header {
+    background-color: #1a1a1a;  /* Darker background for a sleek look */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    background-image: linear-gradient(135deg, rgba(209, 27, 27, 0.8), rgba(0, 0, 0, 0.8)); /* Blue gradient overlay */
+}
+
+.education-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.education-header p {
+    font-size: 1.3rem;
+    color: white; 
+    font-weight: 500;
+}
+
+/* Main Content Section */
+.details-section {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);  /* Soft shadow for a card-like effect */
+}
+
+.details-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.details-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Styled List */
+.details-list {
+    margin: 20px 0;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.details-list li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    position: relative;
+
+}
+
+.details-list li::before {
+    content: "\2022"; 
+    position: absolute;
+    left: 0;
+    color: #db1515; /* Red color for bullets */
+    font-size: 1.5rem;
+}
+
+/* Project Details */
+.project-details {
+    margin-top: 40px;
+}
+
+.project-item {
+    padding: 20px;
+    border-left: 4px solid #db1515;  /* Red highlight for each project */
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);  /* Slight lift on hover */
+}
+
+.project-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+.project-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 1rem;
+}
