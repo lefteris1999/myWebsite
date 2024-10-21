@@ -52,7 +52,7 @@
 .details-list {
     margin: 20px 0;
     padding-left: 20px;
-    list-style: none;
+    list-style: none; /* Disable default bullet points */
 }
 
 .details-list li {
@@ -61,16 +61,34 @@
     margin-bottom: 12px;
     padding-left: 10px;
     position: relative;
-
+    list-style: none;
 }
 
 .details-list li::before {
-    content: "\2022"; 
+    content: "\2022"; /* Custom bullet point */
     position: absolute;
     left: 0;
-    color: #103bc7; /* Blue color for bullets */
+    color: #103bc7; /* Golden color for bullets */
     font-size: 1.5rem;
 }
+
+/* Styling for nested lists */
+.details-list li ul {
+    margin-top: 10px;
+    padding-left: 20px; /* Indentation for inner list */
+}
+
+.details-list li ul li {
+    font-size: 1rem;
+    color: #666;
+}
+
+.details-list li ul li::before {
+    content: "–"; /* A dash for the inner list items */
+    font-size: 1rem;
+    color: #103bc7;
+}
+
 
 /* Project Details */
 .project-details {
