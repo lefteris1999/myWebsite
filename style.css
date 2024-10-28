@@ -32,16 +32,17 @@ header {
 }
 
 .header-title span {
-    color: #FFD700;
+    color: black;
 }
 
 .header-subtitle {
     font-size: 1.5rem;
     margin: 10px 0;
+    color: black;
 }
 
 .btn-primary {
-    background-color: #FFD700;
+    background-color: #e0f7fa;
     color: #333;
     padding: 10px 25px;
     border: none;
@@ -51,7 +52,7 @@ header {
 }
 
 .btn-primary:hover {
-    background-color: #ffcc00;
+    background-color: #3a85f5;
 }
 
 /* Navbar */
@@ -81,7 +82,7 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: #FFD700;
+    color: #3a85f5;
 }
 
 /* About Section - Blue Background */
@@ -104,7 +105,7 @@ header {
 
 .about-section span {
     font-weight: bold;
-    color: #FFD700;
+    color: #3a85f5;
 }
 
 /* Portfolio Section - Gray Background */
@@ -150,10 +151,79 @@ header {
     color: #666;
 }
 
+/* Experience Section */
+.experience-section {
+    background-color: #e0f7fa; /* Light Blue background color */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.experience-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Timeline Container */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0;
+}
+
+.experience-item {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience-item:hover {
+    transform: scale(1.05);
+}
+
+/* Content inside each experience block */
+.experience-item h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.experience-item strong {
+    font-weight: 600;
+    color: #000;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .experience-item {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .experience-item h3 {
+        font-size: 1.4rem;
+    }
+}
+
 
 /* Education Section */
 .education-section {
-    background-color: #e0f7fa;
+    background-color: #e9ecef;
     padding: 60px 0;
     text-align: center;
 }
@@ -242,10 +312,78 @@ header {
 
 
 
-/* Contact Section - Soft Yellow Background */
+/* Contact Section - Light Blue Background */
 .contact-section {
     padding: 50px 20px;
-    background-color: #fffde7; /* Soft yellow background */
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+}
+
+.contact-item img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.contact-item img:hover {
+    opacity: 1;
+}
+
+.contact-item a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #3a85f5; /* Same blue used in hover effects */
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    color: #005bb5;
+}
+
+
+
+/* for later implemenation of emailing
+.contact-section {
+    padding: 50px 20px;
+    background-color: #e0f7fa;
 }
 
 .contact-section h2 {
@@ -279,7 +417,7 @@ form input, form textarea {
 form button {
     display: block;
     width: 100%;
-    background-color: #FFD700;
+    background-color: #e0f7fa;
     color: #333;
     border: none;
     padding: 15px;
@@ -289,8 +427,9 @@ form button {
 }
 
 form button:hover {
-    background-color: #ffcc00;
+    background-color: #fae0e0;
 }
+    */
 
 /* Footer */
 footer {
@@ -301,7 +440,7 @@ footer {
 }
 
 footer i {
-    color: #FFD700;
+    color: #3a85f5;
 }
 
 /* Back to Top Button */
@@ -310,7 +449,7 @@ footer i {
     bottom: 20px;
     right: 20px;
     padding: 10px 15px;
-    background-color: #FFD700;
+    background-color: #e0f7fa;
     color: #333;
     border: none;
     border-radius: 5px;
@@ -321,7 +460,7 @@ footer i {
 }
 
 .back-to-top-btn:hover {
-    background-color: #ffcc00;
+    background-color: #3a85f5;
 }
 
 /* Show the button when the user scrolls */

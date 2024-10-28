@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="container header-content">
-            <h1 class="header-title">Hi, I'm <span>Eleftherios Konstantinou</span></h1>
+            <h1 class="header-title"><span>Eleftherios Konstantinou</span></h1>
             <p class="header-subtitle"><span>Data Scientist</span></p>
             <a href="#about" class="btn-primary">Learn More About Me</a>
         </div>
@@ -30,8 +30,9 @@
     <!-- About Section with Unique Background Color -->
     <section id="about" class="container about-section">
         <h2>About Me</h2>
-        <p>Hello! My name is Eleftherios, a <span>Data Scientist</span>, passionate about combining creativity and technology to create impactful experiences. I specialize in Data Analysis and Machine Learning and have a deep love for solving complex problems with innovative and data driven solutions.</p>
-        <p>Feel free to explore my portfolio below to see some of my recent projects.</p>
+        <p>Hello! My name is Eleftherios. I am a <span>Data Scientist</span>, passionate about combining creativity and technology to create impactful projects. I specialize in Data Analysis and Machine Learning and have a deep interest for solving complex problems using data driven solutions.</p>
+        <br>
+        <p>Feel free to explore my portfolio below to see some of my recent projects, and learn about my education and career.</p>
     </section>
 
     <!-- Portfolio Section with Different Background Color -->
@@ -52,9 +53,35 @@
                     <p>Click to Learn More</p>
                 </div>
             </div>
+            <div class="portfolio-item">
+                <img src="img/UnemploymentRateMap.JPG" alt="Project 3">
+                <div class="portfolio-details">
+                    <h3>Exploring the Effects of Unemployment on a Country Through Visualisations</h3>
+                    <p>Click to Learn More</p>
+                </div>
+            </div>
             <!-- Add more projects -->
         </div>
     </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container experience-section">
+        <h2>Experience</h2>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <h3>IT Business Analyst</h3>
+                <p><strong>Equitably.ai</strong> May 2024 - October 2024</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eligendi quae ratione quasi impedit, nulla dolorem soluta possimus, eaque quo velit, dolor quidem modi rem explicabo. Quas reprehenderit recusandae unde?.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Research Assistant/ Data Science Intern</h3>
+                <p><strong>Equitably.ai</strong> - June 2023 - Dec 2023</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur consectetur nihil corrupti deleniti in autem amet, aliquam expedita dolore. Hic et eius eaque dicta cum est molestiae aut, sed labore!</p>
+            </div>
+            <!-- Add more experience items as needed -->
+        </div>
+    </section>
+
 
     <!-- Education Section with Different Background Color -->
     <section id="education" class="container education-section">
@@ -78,30 +105,28 @@
     </section>
     
     
-
-    <!-- Contact Section with a Distinct Background Color -->
-    <!-- <section id="contact" class="container contact-section">
-        <h2>Contact Me</h2>
-        <form id="contactForm" >
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
-    </section> -->
-
-
-<!-- Open gmail action -->
     <section id="contact" class="container contact-section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via email or connect on LinkedIn and GitHub!</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:your-email@example.com">elefcon99@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://linkedin.com/in/eleftherios-konstantinou-79a019239" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/lefteris1999" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Open gmail action - NOT YET IMPLEMENTED-->
+    <!-- <section id="contact" class="container contact-section">
         <h2>Contact Me</h2>
         <form id="contactForm" onsubmit="openGmail(event)">
             <div class="form-group">
@@ -129,64 +154,23 @@
             const message = document.getElementById('message').value;
     
             // Pre-fill the Gmail email with subject and body
-            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=elefcon99@gmail.com&su=Contact%20from%20${name}&body=Name:%20${name}%0AEmail:%20${email}%0A%0A${message}`;
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=MY_USERNAME@gmail.com&su=Contact%20from%20${name}&body=Name:%20${name}%0AEmail:%20${email}%0A%0A${message}`;
     
             // Open Gmail in a new tab
             window.open(gmailUrl, '_blank');
         }
-    </script>
+    </script> -->
     
-
-<!-- Use mailto action from HTML-->
-    <!-- <section id="contact" class="container contact-section">
-        <h2>Contact Me</h2>
-        <form id="contactForm" action="mailto:mouxtisfais@gmail.com" method="POST" enctype="text/plain">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
-    </section> -->
-    
-
-    <!-- Use  PHP to handle emails -->
-    <!-- <section id="contact" class="container contact-section">
-        <h2>Contact Me</h2>
-        <form id="contactForm" action="sendEmail.php" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
-    </section>     -->
 
     <footer>
         <p>&copy; 2024 Eleftherios Konstantinou. Designed by Eleftherios Konstantinou.</p>
-        <div class="social-links">
+        <!-- <div class="social-links">
             <a href="https://linkedin.com/in/eleftherios-konstantinou-79a019239" target="_blank" class="social-link">
                 <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://github.com/lefteris1999" target="_blank" class="social-link">
                 <i class="fab fa-github"></i>
-            </a>
+            </a> -->
         </div>
     </footer>
 

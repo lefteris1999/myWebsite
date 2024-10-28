@@ -10,22 +10,22 @@ document.querySelectorAll('.navbar a').forEach(link => {
     });
 });
 
-// Contact form submission handler
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+// Contact form submission handler -- NOT YET IMPLEMENTED FULLY
+// document.getElementById('contactForm').addEventListener('submit', function(event) {
+//     event.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+//     const name = document.getElementById('name').value;
+//     const email = document.getElementById('email').value;
+//     const message = document.getElementById('message').value;
 
-    // Simple form validation
-    if (name && email && message) {
-        alert(`Thank you, ${name}! Your message has been sent.`);
-        document.getElementById('contactForm').reset();
-    } else {
-        alert("Please fill out all fields.");
-    }
-});
+//     // Simple form validation
+//     if (name && email && message) {
+//         alert(`Thank you, ${name}! Your message has been sent.`);
+//         document.getElementById('contactForm').reset();
+//     } else {
+//         alert("Please fill out all fields.");
+//     }
+// });
 
 
 // Get the button
