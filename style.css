@@ -485,24 +485,40 @@ footer i {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 10px 15px;
-    background-color: #e0f7fa;
-    color: #333;
+    padding: 12px 20px;
+    background-color: #009688; 
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    display: none; /* Hidden by default */
-    transition: opacity 0.3s ease-in-out;
+    border-radius: 50px; 
+    font-size: 1.2rem; 
+    font-weight: 600; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: none; /* Hidden by default - only become visible when scroll down */
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease-in-out; /* Smooth transitions */
 }
 
+/* Hover effect */
 .back-to-top-btn:hover {
-    background-color: #3a85f5;
+    background-color: #00796b; /* Darker shade on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Click effect */
+.back-to-top-btn:active {
+    transform: translateY(1px); /* small dip*/
 }
 
 /* Show the button when the user scrolls */
 .back-to-top-btn.show {
     display: block;
-    opacity: 1;
+    opacity: 1; /* Fade-in effect */
 }
+
+/* Focus effect */
+.back-to-top-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 150, 136, 0.5); 
+}
+
 
