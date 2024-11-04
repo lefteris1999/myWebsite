@@ -15,30 +15,67 @@ body {
 /* Header */
 header {
     height: 100vh;
-    background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+    background: url('img/pexels-merlin-14314637.jpg') no-repeat center center/cover;
+    /*background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Center Align and Color */
 .header-content {
     text-align: center;
-    color: white;
+    color: #333; 
 }
 
+/* Header Title */
 .header-title {
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 3.5rem; 
+    font-weight: 700; 
+    letter-spacing: 1px; 
+    color: #333;
+    background: linear-gradient(135deg, #e0f7fa, #3a85f5); /* gradient effect */
+    -webkit-background-clip: text;
+    color: transparent; 
+    margin-bottom: 10px; 
+    transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.header-title:hover {
+    transform: scale(1.05); /* hover effect */
 }
 
 .header-title span {
-    color: black;
+    color: inherit; /* Inherit gradient from .header-title */
 }
 
+/* Header Subtitle */
 .header-subtitle {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #e0f7fa; 
+    margin: 15px 0; 
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.header-subtitle span {
+    color: inherit; /* Inherit color from parent */
+}
+
+.header-subtitle:hover {
+    color: #3a85f5; /* Subtle color change on hover */
+}
+
+/* Divider Below Title */
+.header-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #3a85f5; 
+    margin: 10px auto 0; /* Center align below title */
+    border-radius: 2px;
 }
 
 .btn-primary {
@@ -153,7 +190,7 @@ header {
 
 /* Experience Section */
 .experience-section {
-    background-color: #e0f7fa; /* Light Blue background color */
+    background-color: #e9ecef; /* Light Blue background color */
     padding: 60px 0;
     text-align: center;
 }
@@ -223,7 +260,7 @@ header {
 
 /* Education Section */
 .education-section {
-    background-color: #e9ecef;
+    background-color: #e0f7fa;
     padding: 60px 0;
     text-align: center;
 }
