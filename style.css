@@ -34,7 +34,7 @@ header {
     font-weight: 700; 
     letter-spacing: 1px; 
     color: #333;
-    background: linear-gradient(135deg, #e0f7fa, #3a85f5); /* gradient effect */
+    background: linear-gradient(135deg, #fb8500, #ffb703); /* gradient effect */
     -webkit-background-clip: text;
     color: transparent; 
     margin-bottom: 10px; 
@@ -53,7 +53,9 @@ header {
 .header-subtitle {
     font-size: 2rem;
     font-weight: 500;
-    color: #e0f7fa; 
+    background: linear-gradient(135deg, #fb8500, #ffb703); /* gradient effect */
+    -webkit-background-clip: text;
+    color: transparent; 
     margin: 15px 0; 
     letter-spacing: 0.5px;
     transition: color 0.3s ease;
@@ -64,7 +66,7 @@ header {
 }
 
 .header-subtitle:hover {
-    color: #3a85f5; /* Subtle color change on hover */
+    color: #fca311; /* Subtle color change on hover */
 }
 
 /* Divider Below Title */
@@ -73,23 +75,24 @@ header {
     display: block;
     width: 50px;
     height: 4px;
-    background-color: #3a85f5; 
+    background-color: #fca311; 
     margin: 10px auto 0; /* Center align below title */
     border-radius: 2px;
 }
 
 .btn-primary {
-    background-color: #e0f7fa;
+    background-color: #fca311;
     color: #333;
     padding: 10px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .btn-primary:hover {
-    background-color: #3a85f5;
+    background-color: #fb8500;
 }
 
 /* Navbar */
@@ -119,7 +122,7 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: #3a85f5;
+    color: #fb8500;
 }
 
 /* About Section - Blue Background */
@@ -520,5 +523,3 @@ footer i {
     outline: none;
     box-shadow: 0 0 0 4px rgba(0, 150, 136, 0.5); 
 }
-
-
