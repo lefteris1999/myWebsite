@@ -15,7 +15,7 @@ body {
 /* Header */
 header {
     height: 100vh;
-    background: url('img/pexels-merlin-14314637.jpg') no-repeat center center/cover;
+    background: url('img/StockSnap_XGXORJWZIX.jpg') no-repeat center center/cover; /* credit to <a href="https://stocksnap.io/photo/computer-office-XGXORJWZIX">Photo</a> by <a href="https://stocksnap.io/author/43730">Lukas</a> on <a href="https://stocksnap.io">StockSnap</a>*/
     /*background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;*/
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@ header {
     font-weight: 700; 
     letter-spacing: 1px; 
     color: #333;
-    background: linear-gradient(135deg, #fb8500, #ffb703); /* gradient effect */
+    background: linear-gradient(135deg, #219ebc, #023047); /* gradient effect */
     -webkit-background-clip: text;
     color: transparent; 
     margin-bottom: 10px; 
@@ -53,7 +53,7 @@ header {
 .header-subtitle {
     font-size: 2rem;
     font-weight: 500;
-    background: linear-gradient(135deg, #fb8500, #ffb703); /* gradient effect */
+    background: linear-gradient(135deg, #219ebc, #023047); /* gradient effect */
     -webkit-background-clip: text;
     color: transparent; 
     margin: 15px 0; 
@@ -66,7 +66,7 @@ header {
 }
 
 .header-subtitle:hover {
-    color: #fca311; /* Subtle color change on hover */
+    color: #023047; /* Subtle color change on hover */
 }
 
 /* Divider Below Title */
@@ -75,13 +75,13 @@ header {
     display: block;
     width: 50px;
     height: 4px;
-    background-color: #fca311; 
+    background-color: #023047; 
     margin: 10px auto 0; /* Center align below title */
     border-radius: 2px;
 }
 
 .btn-primary {
-    background-color: #fca311;
+    background-color: #219ebc;
     color: #333;
     padding: 10px 25px;
     border: none;
@@ -92,7 +92,8 @@ header {
 }
 
 .btn-primary:hover {
-    background-color: #fb8500;
+    background-color: #023047;
+    color: #f4f4f4;
 }
 
 /* Navbar */
@@ -122,85 +123,42 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: #fb8500;
+    color: #219ebc;
 }
 
 /* About Section - Blue Background */
 .about-section {
     padding: 50px 20px;
-    background-color: #e0f7fa; /* Light blue background */
+    background-color: #e5e5e5; /* Light blue background */
     text-align: center;
 }
 
 .about-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #14213d;
 }
 
 .about-section p {
     font-size: 1.1rem;
-    color: #666;
+    color: #333;
 }
 
 .about-section span {
     font-weight: bold;
-    color: #3a85f5;
-}
-
-/* Portfolio Section - Gray Background */
-.portfolio-section {
-    padding: 50px 20px;
-    background-color: #e9ecef; /* Light gray background */
-}
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.portfolio-item {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-}
-
-.portfolio-item img {
-    width: 100%;
-    display: block;
-}
-
-.portfolio-details {
-    padding: 15px;
-    text-align: center;
-}
-
-.portfolio-item:hover {
-    transform: scale(1.02);
-}
-
-.portfolio-details h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.portfolio-details p {
-    color: #666;
+    color: #14213d;
 }
 
 /* Experience Section */
 .experience-section {
-    background-color: #e9ecef; /* Light Blue background color */
+    background-color: #ffffff; /* Light Blue background color */
     padding: 60px 0;
     text-align: center;
 }
 
 .experience-section h2 {
     font-size: 2.5rem;
-    color: #333;
+    color: #14213d;
     margin-bottom: 40px;
 }
 
@@ -233,13 +191,13 @@ header {
 /* Content inside each experience block */
 .experience-item h3 {
     font-size: 1.6rem;
-    color: #333;
+    color: #14213d;
     margin-bottom: 10px;
 }
 
 .experience-item p {
     font-size: 1rem;
-    color: #555;
+    color: #333;
     margin-bottom: 8px;
 }
 
@@ -263,14 +221,14 @@ header {
 
 /* Education Section */
 .education-section {
-    background-color: #e0f7fa;
+    background-color: #e5e5e5;
     padding: 60px 0;
     text-align: center;
 }
 
 .education-section h2 {
     font-size: 2.5rem;
-    color: #333;
+    color: #14213d;
     margin-bottom: 40px;
 }
 
@@ -304,13 +262,13 @@ header {
 /* Content inside each education block */
 .education-item h3 {
     font-size: 1.6rem;
-    color: #333;
+    color: #14213d;
     margin-bottom: 10px;
 }
 
 .education-item p {
     font-size: 1rem;
-    color: #555;
+    color: #333;
     margin-bottom: 8px;
 }
 
@@ -350,25 +308,74 @@ header {
     }
 }
 
+/* Portfolio Section - Gray Background */
+.portfolio-section {
+    padding: 50px 20px;
+    background-color: #ffffff; /* Light gray background */
+}
 
+.portfolio-section h2 {
+    color:#14213d;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.02);
+}
+
+.portfolio-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #14213d;
+}
+
+.portfolio-details p {
+    color: #333;
+}
 
 /* Contact Section - Light Blue Background */
 .contact-section {
     padding: 50px 20px;
-    background-color: #e0f7fa;
+    background-color: #e5e5e5;
     text-align: center;
 }
 
 #contact h2 {
     font-size: 2.5rem;
-    color: #333;
+    color: #14213d;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 #contact p {
     font-size: 1.2rem;
-    color: #666;
+    color: #333;
     margin-bottom: 30px;
 }
 
@@ -409,7 +416,7 @@ header {
 .contact-item a {
     text-decoration: none;
     font-size: 1.1rem;
-    color: #3a85f5; /* Same blue used in hover effects */
+    color: #14213d; /* Same blue used in hover effects */
     transition: color 0.3s ease;
     font-weight: bold;
 }
