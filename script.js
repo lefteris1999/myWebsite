@@ -53,4 +53,24 @@ function scrollToTop() {
     });
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.toggle-btn');
+  
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        const details = button.previousElementSibling; // Get the experience details
+        const isVisible = details.style.display === 'block';
+  
+        if (isVisible) {
+          details.style.display = 'none';
+          button.textContent = 'Show More';
+        } else {
+          details.style.display = 'block';
+          button.textContent = 'Show Less';
+        }
+      });
+    });
+  });
+  
+
 

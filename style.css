@@ -218,6 +218,36 @@ header {
     }
 }
 
+.experience-details {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+  }
+
+.toggle-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: none; /* Remove the background */
+    border: 1px solid #ccc; /* Subtle border */
+    color: #007BFF; /* Text color for the button */
+    font-size: 14px; /* Slightly smaller font size */
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .toggle-btn:hover {
+    background-color: #f1f1f1; /* Light background on hover */
+    color: #0056b3; /* Darker color on hover */
+    border-color: #aaa; /* Slightly darker border on hover */
+  }
+  
+  .toggle-btn:focus {
+    outline: none; /* Remove focus outline */
+    border-color: #007BFF; /* Blue border when focused */
+  }
+
 
 /* Education Section */
 .education-section {
