@@ -156,6 +156,22 @@ header {
     text-align: center;
 }
 
+/* Align job title and dates in a row */
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Style for the dates */
+.experience-dates {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: right;
+    margin-left: 10px; /* Optional spacing */
+}
+
 .experience-section h2 {
     font-size: 2.5rem;
     color: #14213d;
