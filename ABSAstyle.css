@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    background: #FF4136; /* Changed to red */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+header p {
+    font-size: 1.2em;
+}
+.container {
+    padding: 20px;
+    padding-bottom: 60px; /* Add padding to avoid footer overlap */
+}
+section {
+    margin-bottom: 40px;
+}
+.section-title {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    color: #333;
+    border-bottom: 2px solid #FF4136; /* Changed to red */
+    padding-bottom: 5px;
+}
+.image {
+    text-align: center;
+    margin: 20px 0;
+}
+.image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* General reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    display: none; /* Hide all images by default */
+}
+
+.carousel-images img.active {
+    display: block; /* Show only the active image */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+.footer a {
+    color: #FF4136; /* Changed to red */
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}

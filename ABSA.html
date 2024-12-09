@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect-Based Sentiment Analysis</title>
+    <link rel="stylesheet" href="ABSAstyle.css">
+    <script defer src="Carousel.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Aspect-Based Sentiment Analysis</h1>
+        <p>Master's Thesis Project in Data Science</p>
+    </header>
+
+    <div class="container">
+        <!-- Introduction -->
+        <section id="introduction">
+            <h2 class="section-title">Introduction</h2>
+            <p>
+                Aspect-Based Sentiment Analysis (ABSA) is a sophisticated natural language processing technique that determines the sentiment associated with specific aspects of a product, service, or entity. This project explored its application in analyzing customer reviews to identify actionable insights for businesses.
+            </p>
+        </section>
+
+        <!-- Key Features -->
+        <section id="features">
+            <h2 class="section-title">Key Features</h2>
+            <ul>
+                <li><strong>Dataset:</strong> Client data: *Due to NDA agreements and confidentiality, results shown here will be based on hotel and restaurant reviews collected through various online sources*</li>
+                <li><strong>Techniques:</strong> Preprocessing, Aspect Extraction, Sentiment Classification</li>
+                <li><strong>Tools:</strong> Python, NLTK, Scikit-learn, TensorFlow</li>
+                <li><strong>Results:</strong> Achieved <b>82% accuracy</b> on SemEval-2014 Restaurant dataset and <b>79% accuracy</b> on SemEval-2014 Hotels dataset</li>
+            </ul>
+        </section>
+
+        <!-- Methodology -->
+        <section id="methodology">
+            <h2 class="section-title">Methodology</h2>
+            <div class="image">
+                <img src="methodology-flowchart.png" alt="Methodology Flowchart">
+            </div>
+            <p>
+                The process involved:
+            </p>
+            <ol>
+                <li>Data Preprocessing: Cleaning, tokenization, and stemming of text data.</li>
+                <li>Aspect Extraction: Using unsupervised learning to identify key aspects.</li>
+                <li>Sentiment Classification: Applying machine learning models to predict sentiment polarity.</li>
+            </ol>
+        </section>
+
+        <!-- New Section: Pipeline Structure & Model Architecture with Carousel -->
+        <section id="pipeline-models">
+            <h2 class="section-title">Pipeline Structure & Model Architecture</h2>
+            <div class="carousel">
+                <button class="carousel-button prev">&#10094;</button>
+                <div class="carousel-images">
+                    <img src="img/ABSApipeline2.JPG" alt="ABSApipeline2" class="active">
+                    <img src="img/ABSApipelineJPG.JPG" alt="ABSApipelineJPG">
+                    <img src="img/ATEmodelArchitecture.JPG" alt="ATEmodelArchitecture">
+                    <img src="img/ABSAmodelArchitecture.JPG" alt="ABSAmodelArchitecture">
+                </div>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+            <p>
+                The pipeline structure illustrates the steps from Aspect Term Extraction (ATE) to the sentiment classification of each aspect term and the final post-processing to collate Aspect Terms with their related Sentiment Labels. The model architecture showcases the machine learning model used for sentiment prediction.
+            </p>
+        </section>
+
+        <!-- Visuals & Results -->
+        <section id="results">
+            <h2 class="section-title">Visuals & Results</h2>
+            <div class="carousel">
+                <button class="carousel-button prev">&#10094;</button>
+                <div class="carousel-images">
+                    <img src="img/visuals/aspect-sentiment-frequency-line2.png" alt="aspect-sentiment-frequency-line2" class="active">
+                    <img src="img/visuals/data_comb-aspect_term-sentiment-heatmap.png" alt="data_comb-aspect_term-sentiment-heatmap" >
+                    <img src="img/visuals/hotels1.png" alt="hotels1" >
+                    <img src="img/visuals/hotels2.png" alt="hotels2" >
+                    <img src="img/visuals/hotels3.png" alt="hotels3" >
+                    <img src="img/visuals/polarity-aspect_term-frequency.png" alt="polarity-aspect_term-frequency" >
+                    <img src="img/visuals/Sheet 1.png" alt="Sheet 1" >
+                    <img src="img/visuals/Sheet 2.png" alt="Sheet 2" >
+                    <img src="img/visuals/Sheet 3.png" alt="Sheet 3" >
+                    <img src="img/visuals/Sheet 4.png" alt="Sheet 4" >
+                    <img src="img/visuals/Sheet 5.png" alt="Sheet 5" >
+                    <img src="img/visuals/Sheet 6.png" alt="Sheet 6" >
+                    <img src="img/visuals/update1.png" alt="update1" >
+                    <img src="img/visuals/update2.png" alt="update2" >
+                    <img src="img/visuals/update3.png" alt="update3" >
+                    <img src="img/visuals/update4.png" alt="update4" >
+                    <img src="img/visuals/update5.png" alt="update5" >
+                    <img src="img/visuals/update6.png" alt="update6" >
+                </div>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+            <p>
+                The results demonstrate a significant correlation between sentiment polarity and customer satisfaction. The system successfully highlighted positive and negative aspects for various categories.
+            </p>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion">
+            <h2 class="section-title">Conclusion & Takeaways</h2>
+            <p>
+                This project provided valuable insights into the power of ABSA in real-world applications. It reinforced the importance of robust data preprocessing and feature engineering for achieving high model accuracy. Future work could include extending the model to multilingual datasets and exploring deep learning architectures.
+            </p>
+        </section>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Your Name | <a href="index.html">Back to Main Page</a></p>
+    </div>
+</body>
+</html>
