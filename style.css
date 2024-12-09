@@ -12,6 +12,10 @@ body {
     color: #333;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Header */
 header {
     height: 100vh;
@@ -358,6 +362,7 @@ header {
 .portfolio-section {
     padding: 50px 20px;
     background-color: #ffffff; /* Light gray background */
+    text-decoration: none;
 }
 
 .portfolio-section h2 {
@@ -389,6 +394,7 @@ header {
 .portfolio-details {
     padding: 15px;
     text-align: center;
+    
 }
 
 .portfolio-item:hover {
