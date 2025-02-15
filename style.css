@@ -239,29 +239,45 @@ header {
 }
 
 .experience-details {
-    display: none; /* Initially hidden */
+    display: none; /* Hidden at start */
     margin-top: 10px;
     font-size: 0.9em;
     color: #666;
   }
 
 
-.IMR-Clients li {
-    color: #333;
-    margin-bottom: 12px;
-    margin-left: 40px;
-    padding-left: 0px;
-    position: relative;
-
+/* Base styling for main list */
+ul.IMR-Clients {
+    list-style-type: disc; 
+    margin-left: 20px;
+    padding-left: 15px;
 }
 
-.IMR-Projects li {
-    color: #333;
-    margin-bottom: 12px;
-    margin-left: 70px;
-    padding-left: 0px;
-    position: relative;
+/* Styling for nested lists */
+ul.IMR-Projects {
+    list-style-type: circle;
+    margin-left: 25px;
+    padding-left: 15px;
+}
 
+/*Spacing */
+ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    ul.IMR-Clients, ul.IMR-Projects {
+        margin-left: 15px;
+        padding-left: 10px;
+    }
+
+    ul li {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+    }
 }
 
 .toggle-btn {
